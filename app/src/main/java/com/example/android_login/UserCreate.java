@@ -1,12 +1,12 @@
 package com.example.android_login;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class UserCreate extends AppCompatActivity {
     private String name, email, user, password;
@@ -37,7 +37,7 @@ public class UserCreate extends AppCompatActivity {
         btnConfirm.setOnClickListener(onClickConfirm());
     }
 
-    // Evento do botão COnfirmar a criação do usuário
+    // Evento do botão Confirmar a criação do usuário
     private View.OnClickListener onClickConfirm() {
         return new View.OnClickListener() {
             @Override
