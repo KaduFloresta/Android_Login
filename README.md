@@ -32,3 +32,10 @@
 - [X] Inserção dos dados na tela Criação do Usuário.
 
 ---
+
+# Prints do Aplicativo
+ 
+ <img src="https://github.com/KaduFloresta/Android_Login/blob/master/app/src/main/res/drawable/print.png"/>
+ <img src="https://github.com/KaduFloresta/Android_Login/blob/master/app/src/main/res/drawable/print2.png"/>
+ <img src="https://github.com/KaduFloresta/Android_Login/blob/master/app/src/main/res/drawable/print3.png"/>
+
