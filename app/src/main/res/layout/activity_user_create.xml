@@ -4,35 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#6800BCD4"
+    android:backgroundTint="#6800BCD4"
     tools:context=".UserCreate">
-
 
 
     <TextView
         android:id="@+id/screenName1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:allowUndo="false"
         android:autoSizeTextType="uniform"
-        android:background="#FFC107"
+        android:background="#2196F3"
         android:gravity="center"
         android:text="Criar Usuário"
         android:textAlignment="center"
         android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#283473"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <EditText
         android:id="@+id/txtCreateName"
-        android:layout_width="250dp"
+        android:layout_width="0dp"
         android:layout_height="40dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
+        android:hint=" Nome"
+        android:textSize="20sp"
         android:inputType="textPersonName"
-        android:hint="Nome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,11 +47,14 @@
 
     <EditText
         android:id="@+id/txtCreateEmail"
-        android:layout_width="250dp"
+        android:layout_width="0dp"
         android:layout_height="40dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="Email"
+        android:textSize="20sp"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,37 +62,55 @@
 
     <EditText
         android:id="@+id/txtCreateUser"
-        android:layout_width="250dp"
+        android:layout_width="0dp"
         android:layout_height="40dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Usuário"
+        android:textSize="20sp"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtCreateEmail" />
 
     <EditText
         android:id="@+id/txtCreatePassword"
-        android:layout_width="250dp"
+        android:layout_width="0dp"
         android:layout_height="40dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
-        android:inputType="textVisiblePassword|textPassword"
         android:hint="Senha"
+        android:textSize="20sp"
+        android:inputType="textVisiblePassword|textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtCreateUser" />
 
     <Button
         android:id="@+id/buttonConfirm"
-        android:layout_width="150dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="50dp"
+        android:layout_width="236dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#2196F3"
         android:text="Confirmar"
-        android:textSize="15dp"
+        android:textColor="#283473"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtCreatePassword" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/senac"
+        tools:layout_editor_absoluteX="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
